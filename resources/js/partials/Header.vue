@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="bg-auto bg-cover">
     <p>Header</p>
   </header>
 </template>

@@ -31,6 +31,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 
@@ -142,11 +145,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Navigation",
   data: function data() {
@@ -182,17 +180,24 @@ var render = function() {
     "main",
     { staticClass: "font-sans antialiased mt-0 leading-relaxed" },
     [
-      _c("myHeader"),
-      _vm._v(" "),
-      _c("myNav"),
+      _c("myHeader", { staticClass: "flex flex-col mx-auto lg:px-40" }),
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "container mx-auto px-2 md:mt-2" },
+        { staticClass: "bg-blue-200 w-full sticky top-0" },
+        [_c("myNav")],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "flex flex-col px-4 mx-auto lg:px-40 mt-2" },
         [
           _vm._t("default"),
           _vm._v(" "),
           _c("img", { attrs: { src: "https://via.placeholder.com/1920x800" } }),
+          _vm._v(" "),
+          _c("br"),
           _vm._v(" "),
           _c("img", { attrs: { src: "https://via.placeholder.com/1920x800" } }),
           _vm._v(" "),
@@ -205,7 +210,7 @@ var render = function() {
         2
       ),
       _vm._v(" "),
-      _c("myFoot")
+      _c("myFoot", { staticClass: "flex flex-col mx-auto lg:px-40" })
     ],
     1
   )
@@ -240,9 +245,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("footer", { staticClass: "mt-5 p-10 bg-gray-500" }, [
-      _c("p", { staticClass: "flex flex-row justify-center items-center" }, [
-        _vm._v("This is my footer")
-      ])
+      _c("p", { staticClass: "flex flex-row" }, [_vm._v("This is my footer")])
     ])
   }
 ]
@@ -274,7 +277,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("header", [_c("p", [_vm._v("Header")])])
+    return _c("header", { staticClass: "bg-auto bg-cover" }, [
+      _c("p", [_vm._v("Header")])
+    ])
   }
 ]
 render._withStripped = true
@@ -298,91 +303,95 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("nav", { staticClass: "bg-red-500 p-6 md:shadow-md sticky" }, [
-    _c("div", { staticClass: "block sm:hidden" }, [
-      _c(
-        "label",
-        {
-          staticClass: "cursor-pointer lg:hidden block float-right -mt-2",
-          attrs: { for: "menu-toggle" },
-          on: { click: _vm.toggle }
-        },
-        [
-          _c(
-            "svg",
-            {
-              staticClass: "fill-current h-3 w-3 text-gray-900",
-              attrs: {
-                viewBox: "0 0 20 20",
-                xmlns: "http://www.w3.org/2000/svg"
-              }
-            },
-            [
-              _c("title", [_vm._v("Menu")]),
-              _vm._v(" "),
-              _c("path", {
-                attrs: { d: "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" }
-              })
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("input", {
-        staticClass: "hidden",
-        attrs: { type: "checkbox", id: "menu-toggle" }
-      })
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "w-full flex-grow sm:flex sm:items-center sm:w-auto",
-        class: _vm.open ? "block" : "hidden"
-      },
-      [
+  return _c(
+    "nav",
+    {
+      staticClass:
+        "p-6 flex md:text-xl lg:text-2xl flex flex-col mx-auto lg:px-40"
+    },
+    [
+      _c("div", { staticClass: "block sm:hidden" }, [
         _c(
-          "div",
+          "label",
           {
-            staticClass:
-              "sm:flex-grow py-1 text-white text-right text-2xl lg:flex lg:items-center lg:w-auto w-full"
+            staticClass: "cursor-pointer lg:hidden block float-right -mt-2",
+            attrs: { for: "menu-toggle" },
+            on: { click: _vm.toggle }
           },
           [
             _c(
-              "inertia-link",
+              "svg",
               {
                 staticClass:
-                  "no-underline block mt-4 sm:inline-block sm:mt-0 mr-4 hover:text-blue-700 capitalize sm:lowercase md:capitalize lg:normal-case xl:uppercase",
-                attrs: { href: "/" }
+                  "fill-current h-3 w-3 text-black hover:border-black hover:text-black-darkest",
+                attrs: {
+                  viewBox: "0 0 20 20",
+                  xmlns: "http://www.w3.org/2000/svg"
+                }
               },
-              [_vm._v("home")]
-            ),
-            _vm._v(" "),
-            _c(
-              "inertia-link",
-              {
-                staticClass:
-                  "no-underline block mt-4 sm:inline-block sm:mt-0 mr-4 hover:text-blue-700 capitalize sm:lowercase md:capitalize lg:normal-case xl:uppercase",
-                attrs: { href: "/about" }
-              },
-              [_vm._v("about")]
-            ),
-            _vm._v(" "),
-            _c(
-              "inertia-link",
-              {
-                staticClass:
-                  "no-underline block mt-4 sm:inline-block sm:mt-0 mr-4 hover:text-blue-700 capitalize sm:lowercase md:capitalize lg:normal-case xl:uppercase",
-                attrs: { href: "/contact" }
-              },
-              [_vm._v("contact")]
+              [
+                _c("title", [_vm._v("Menu")]),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: { d: "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" }
+                })
+              ]
             )
-          ],
-          1
-        )
-      ]
-    )
-  ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "hidden",
+          attrs: { type: "checkbox", id: "menu-toggle" }
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "w-full flex-grow sm:flex sm:w-auto",
+          class: _vm.open ? "block" : "hidden"
+        },
+        [
+          _c(
+            "div",
+            [
+              _c(
+                "inertia-link",
+                {
+                  staticClass:
+                    "no-underline block mt-4 sm:inline-block sm:mt-0 mr-4 hover:text-black capitalize sm:lowercase md:capitalize lg:normal-case xl:uppercase",
+                  attrs: { href: "/" }
+                },
+                [_vm._v("home")]
+              ),
+              _vm._v(" "),
+              _c(
+                "inertia-link",
+                {
+                  staticClass:
+                    "no-underline block mt-4 sm:inline-block sm:mt-0 mr-4 hover:text-black capitalize sm:lowercase md:capitalize lg:normal-case xl:uppercase",
+                  attrs: { href: "/about" }
+                },
+                [_vm._v("about")]
+              ),
+              _vm._v(" "),
+              _c(
+                "inertia-link",
+                {
+                  staticClass:
+                    "no-underline block mt-4 sm:inline-block sm:mt-0 mr-4 hover:text-black capitalize sm:lowercase md:capitalize lg:normal-case xl:uppercase",
+                  attrs: { href: "/contact" }
+                },
+                [_vm._v("contact")]
+              )
+            ],
+            1
+          )
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

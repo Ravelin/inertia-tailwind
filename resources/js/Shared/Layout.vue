@@ -1,16 +1,19 @@
 <template>
   <main class="font-sans antialiased mt-0 leading-relaxed">
-    <myHeader></myHeader>
-    <myNav></myNav>
+    <myHeader class="flex flex-col mx-auto lg:px-40"></myHeader>
+    <div class="bg-blue-200 w-full sticky top-0">
+      <myNav></myNav>
+    </div>
 
-    <div class="container mx-auto px-2 md:mt-2">
+    <div class="flex flex-col px-4 mx-auto lg:px-40 mt-2">
       <slot />
       <img src="https://via.placeholder.com/1920x800" />
+      <br />
       <img src="https://via.placeholder.com/1920x800" />
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nisi rem dolore cum rerum corrupti odio sint officiis illum. Explicabo, obcaecati libero doloribus quaerat corrupti dolorem neque officiis veniam nesciunt.</p>
     </div>
 
-    <myFoot></myFoot>
+    <myFoot class="flex flex-col mx-auto lg:px-40"></myFoot>
   </main>
 </template>
 
