@@ -62,6 +62,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Footer",
   data: function data() {
@@ -210,7 +220,7 @@ var render = function() {
         2
       ),
       _vm._v(" "),
-      _c("myFoot", { staticClass: "flex flex-col mx-auto lg:px-40" })
+      _c("myFoot", { staticClass: "bg-blue-200 w-full mt-2" })
     ],
     1
   )
@@ -244,9 +254,25 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "mt-5 p-10 bg-gray-500" }, [
-      _c("p", { staticClass: "flex flex-row" }, [_vm._v("This is my footer")])
-    ])
+    return _c(
+      "footer",
+      { staticClass: "flex flex-col mx-auto lg:px-40 mb-4 -mx-2" },
+      [
+        _c("div", { staticClass: "flex" }, [
+          _c("div", { staticClass: "w-1/3 bg-gray-500 h-12" }, [
+            _c("p", [_vm._v("col 1")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "w-1/3 bg-gray-400 h-12" }, [
+            _c("p", [_vm._v("col 2")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "w-1/3 bg-gray-500 h-12" }, [
+            _c("p", [_vm._v("col 3")])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

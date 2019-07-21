@@ -13,7 +13,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nisi rem dolore cum rerum corrupti odio sint officiis illum. Explicabo, obcaecati libero doloribus quaerat corrupti dolorem neque officiis veniam nesciunt.</p>
     </div>
 
-    <myFoot class="flex flex-col mx-auto lg:px-40"></myFoot>
+    <myFoot class="bg-blue-200 w-full mt-2"></myFoot>
   </main>
 </template>
 
