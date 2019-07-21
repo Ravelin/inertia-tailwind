@@ -12,6 +12,8 @@
     "devDependencies": {
         "axios": "^0.18",
         "bootstrap": "^4.1.0",
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "2.0.1",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^4.0.7",
@@ -25,6 +27,8 @@
     },
     "dependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "browsersync": "^0.0.1-security",
+        "hamburgers": "^1.1.3",
         "inertia-vue": "inertiajs/inertia-vue",
         "tailwindcss": "^1.0.5"
     }

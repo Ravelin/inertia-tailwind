@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"dc201578587d2ae816f1","1":"dd30d5ce3391ea115a60","2":"9bb7eeb4d6d7ef8140cb"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0861e913dffbc0881074","1":"f5dd9583c22d191821eb","2":"70e50f5c40dcbd7dc7c8","3":"7df4b9521d66302bd4b3"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -11839,26 +11839,32 @@ module.exports = g;
 var map = {
 	"./About": [
 		"./resources/js/Pages/About.vue",
-		0
+		0,
+		3
 	],
 	"./About.vue": [
 		"./resources/js/Pages/About.vue",
-		0
+		0,
+		3
 	],
 	"./Contact": [
 		"./resources/js/Pages/Contact.vue",
+		0,
 		1
 	],
 	"./Contact.vue": [
 		"./resources/js/Pages/Contact.vue",
+		0,
 		1
 	],
 	"./Welcome": [
 		"./resources/js/Pages/Welcome.vue",
+		0,
 		2
 	],
 	"./Welcome.vue": [
 		"./resources/js/Pages/Welcome.vue",
+		0,
 		2
 	]
 };
@@ -11872,7 +11878,7 @@ function webpackAsyncContext(req) {
 	}
 
 	var ids = map[req], id = ids[0];
-	return __webpack_require__.e(ids[1]).then(function() {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
 		return __webpack_require__(id);
 	});
 }
@@ -11934,8 +11940,8 @@ new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/david/Sites/inertia-project/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/david/Sites/inertia-project/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/ravelin/Sites/inertia-tailwind/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/ravelin/Sites/inertia-tailwind/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

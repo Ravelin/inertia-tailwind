@@ -20,6 +20,10 @@ mix.js('resources/js/app.js', 'public/js')
                 '@': path.resolve('resources/js'),
             },
         }
+    })
+    .browserSync({
+        proxy: 'inertia-tailwind.test',
+        port: 8000
     });
 
 mix.babelConfig({
