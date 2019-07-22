@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex flex-col mx-auto lg:px-40 mb-4 -mx-2">
+  <footer class="flex flex-col mx-auto lg:px-40">
     <div class="flex">
       <div class="w-1/3 bg-gray-500 h-12">
         <p>col 1</p>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="p-6 flex md:text-xl lg:text-2xl flex flex-col mx-auto lg:px-40">
+  <nav class="py-6 flex md:text-xl lg:text-2xl flex flex-col mx-auto lg:px-40">
     <div class="block sm:hidden">
       <label
         for="menu-toggle"
