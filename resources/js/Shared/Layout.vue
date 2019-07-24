@@ -1,11 +1,14 @@
 <template>
   <main class="font-sans antialiased mt-0 leading-relaxed">
     <myHeader class="flex flex-col mx-auto lg:px-40"></myHeader>
-    <div class="bg-blue-200 w-full sticky top-0">
+    <div class="bg-blue-300 w-full sticky top-0">
       <myNav></myNav>
     </div>
 
     <div class="flex flex-col px-4 mx-auto lg:px-40 mt-2">
+      <div class="h-12 bg-blurple-800">
+        <p class="px-2 text-blurple">bg-primary, text blurple</p>
+      </div>
       <slot />
       <img src="https://via.placeholder.com/1920x800" />
       <br />

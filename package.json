@@ -29,6 +29,7 @@
         "browsersync": "^0.0.1-security",
         "hamburgers": "^1.1.3",
         "inertia-vue": "inertiajs/inertia-vue",
+        "laravel-mix-tailwind": "^0.1.0",
         "tailwindcss": "^1.0.5"
     }
 }
