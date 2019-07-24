@@ -1,5 +1,9 @@
 module.exports = {
     theme: {
+        fontFamily: {
+            body: ['Nunito', 'sans-serif'],
+            display: ['Nunito', 'sans-serif']
+        },
         extend: {
             colors: {
                 blurple: {
@@ -23,9 +27,6 @@ module.exports = {
                     980: '#100c29',
                     990: '#080614'
                 },
-            },
-            screens: {
-                '2xl': '1440px',
             }
         },
     },

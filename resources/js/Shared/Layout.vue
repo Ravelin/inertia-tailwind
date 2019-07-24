@@ -6,8 +6,10 @@
     </div>
 
     <div class="flex flex-col px-4 mx-auto lg:px-40 mt-2">
-      <div class="h-12 bg-blurple-800">
-        <p class="px-2 text-blurple">bg-primary, text blurple</p>
+      <div class="h-12 text-right">
+        <button
+          class="bg-transparent hover:bg-blurple-900 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blurple-500 hover:border-transparent rounded"
+        >Button</button>
       </div>
       <slot />
       <img src="https://via.placeholder.com/1920x800" />

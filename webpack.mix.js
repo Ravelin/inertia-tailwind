@@ -1,10 +1,8 @@
 const mix = require('laravel-mix');
 const path = require('path')
-// const tailwindcss = require('tailwindcss')
 require('laravel-mix-tailwind')
 
 mix.js('resources/js/app.js', 'public/js')
-    .tailwind('./tailwind.config.js')
     .sass('resources/sass/app.scss', 'public/css')
     .webpackConfig({
         output: {
@@ -20,8 +18,19 @@ mix.js('resources/js/app.js', 'public/js')
     .browserSync({
         proxy: 'inertia-tailwind.test',
         port: 8000
-    });
+    })
+    .tailwind('./tailwind.config.js');
 
 mix.babelConfig({
     plugins: ['@babel/plugin-syntax-dynamic-import'],
 })
+
+
+/*
+    .options({
+        processCssUrls: false,
+        postCss: [
+            require('./tailwind.config.js')
+        ]
+    })
+*/

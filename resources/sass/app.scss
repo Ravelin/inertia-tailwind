@@ -6,12 +6,11 @@
 // @import '~bootstrap/scss/bootstrap';
 
 //tailwind
-@import "~tailwindcss/dist/base";
+@tailwind base;
 
 /* my styles here */
-
-@import "~tailwindcss//dist/components";
-@import "~tailwindcss/dist/utilities";
+@tailwind components;
+@tailwind utilities;
 
 //hamburger
 @import "~hamburgers/_sass/hamburgers/hamburgers";
