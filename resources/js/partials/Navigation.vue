@@ -1,10 +1,11 @@
 <template>
   <nav class="py-6 flex md:text-xl lg:text-2xl flex flex-col mx-auto lg:px-40">
     <div class="block sm:hidden">
+      <h3 class="block md:hidden">BGH</h3>
       <label
         for="menu-toggle"
         @click="toggle"
-        class="cursor-pointer lg:hidden block float-right -mt-2"
+        class="cursor-pointer lg:hidden block float-right px-5"
       >
         <svg
           class="fill-current h-3 w-3 text-black hover:border-black hover:text-black-darkest"
